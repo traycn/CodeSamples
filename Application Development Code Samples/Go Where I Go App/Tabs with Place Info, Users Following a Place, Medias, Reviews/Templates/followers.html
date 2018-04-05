@@ -1,0 +1,33 @@
+﻿<div class="container" ng-if="following.user != null">
+    <div class="row bootstrap snippets">
+        <!-- SEARCH BAR COMMENTED OUT  -->
+        <!--<div class="col-md-3 col-sm-5">
+            <form method="get" role="form" class="search-form-full">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="s" id="search-input" placeholder="Search...">
+                    <i class="entypo-search"></i>
+                </div>
+            </form>
+        </div>-->
+    </div>
+
+    <span id="wantToGoTitle">Followers</span>
+    <div class="member-entry" ng-repeat="user in following.user">
+        <a href="#" class="member-img">
+            <img ng-src="{{user.userMini.media.url}}" class="img-rounded">
+            <i class="fa fa-forward"></i>
+        </a>
+        <div class="member-details">
+            <h4> <a ng-href="/user/profiles/{{user.userMini.userName}}" class="userPlaceName">{{user.userMini.userName}}</a> </h4>
+            <span></span>
+            <div class="row info-list">
+                <p>{{user.userMini.tagLine}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-if="following.user == null">
+    <span id="singlePlaceFollowersNoData">Be the first to Follow!</span>
+</div>
+

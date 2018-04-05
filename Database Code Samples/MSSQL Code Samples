@@ -1,0 +1,19 @@
+T-SQL - SelectByUserIDPlaceIDFavoriteType [  https://codeshare.io/aVZjZb  ]
+- 1 Table
+- 3 Conditionals
+
+T-SQL - SelectByFavoritePlaceType [  https://codeshare.io/5PdBd7  ]
+- 5 Tables
+- 4 Left Joins
+- 1 Conditional
+
+T-SQL - SelectUsersByPlaceId [  https://codeshare.io/5MNbNO  ]
+- 4 Tables
+- 3 Left Joins
+- 1 Conditional
+
+T-SQL - SelectBySlug [  https://codeshare.io/2j08Eg  ]
+- 7 Tables
+- 6 Left Joins
+- 2 Joins
+- 3 Queries
