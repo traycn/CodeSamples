@@ -15,9 +15,9 @@ gwig.services.addresses.apiPostAddresses = function (data, onSuccess, onError) {
         , error: onError
     };
 
-    $.ajax(url, settings)
+    $.ajax(url, settings);
 
-}
+};
 
 // UPDATE: Address by Id
 gwig.services.addresses.apiPutAddress = function (id, data, onSuccess, onError) {
@@ -33,9 +33,9 @@ gwig.services.addresses.apiPutAddress = function (id, data, onSuccess, onError) 
         , error: onError
     };
 
-    $.ajax(url, settings)
+    $.ajax(url, settings);
 
-}
+};
 
 // GET: Address by Id
 gwig.services.addresses.apiSelectAddress = function (id, onSuccess, onError) {
@@ -48,12 +48,11 @@ gwig.services.addresses.apiSelectAddress = function (id, onSuccess, onError) {
         , datatype: "json"
         , success: onSuccess
         , error: onError
+    };
 
-    }
+    $.ajax(url, settings);
 
-    $.ajax(url, settings)
-
-}
+};
 
 // GET: All Addresses
 gwig.services.addresses.apiSelectAllAddresses = function (onSuccess, onError) {
@@ -66,12 +65,11 @@ gwig.services.addresses.apiSelectAllAddresses = function (onSuccess, onError) {
         , datatype: "json"
         , success: onSuccess
         , error: onError
+    };
 
-    }
+    $.ajax(url, settings);
 
-    $.ajax(url, settings)
-
-}
+};
 
 // DELETE: Address by Id
 gwig.services.addresses.apiDeleteAddress = function (id, onSuccess, onError) {
@@ -84,8 +82,8 @@ gwig.services.addresses.apiDeleteAddress = function (id, onSuccess, onError) {
         , datatype: "json"
         , success: onSuccess
         , error: onError
-    }
+    };
 
-    $.ajax(url, settings)
+    $.ajax(url, settings);
 
-}
+};
